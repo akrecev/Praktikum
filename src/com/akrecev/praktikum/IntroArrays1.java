@@ -1,6 +1,6 @@
 package com.akrecev.praktikum;
 
-public class Arrays1 {
+public class IntroArrays1 {
     public static void main(String[] args) {
         // Создайте и заполните массив именами участников сделки
         String[] participants = {"Петр", "Надежда", "Валентин"};

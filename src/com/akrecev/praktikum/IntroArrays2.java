@@ -2,7 +2,7 @@ package com.akrecev.praktikum;
 
 import java.util.Random;
 
-public class Arrays2 {
+public class IntroArrays2 {
     public static void main(String[] args) {
         // Объявите пустой массив трат за неделю (7 дней)
         int[] expenses = new int[7];

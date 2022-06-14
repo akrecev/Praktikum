@@ -2,7 +2,7 @@ package com.akrecev.praktikum;
 
 import java.util.Scanner;
 
-public class Arrays3 {
+public class IntroArrays3 {
     public static void main(String[] args) {
         // Объявили массив трат за неделю (7 дней)
         double[] expenses = new double[7];
