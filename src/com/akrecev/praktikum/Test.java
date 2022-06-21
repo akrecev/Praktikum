@@ -2,31 +2,21 @@ package com.akrecev.praktikum;
 
 public class Test {
     public static void main(String[] args) {
-        // Ниже вызовите новый метод
-        String highestGrossingFilm = findHighestGrossingFilm();
-        System.out.println("Самый кассовый фильм: " + highestGrossingFilm);
+        double[] expenses = {1772.5, 367.0, 120.6, 2150.2, 874.0, 1.0, 1459.4};
+        double maxExpense = findMaxExpense(expenses); // Вызовите метод и присвойте maxExpense значение его результата
+        System.out.println("Самая большая трата недели " + maxExpense);
     }
 
-    public static String findHighestGrossingFilm() {
-        String film1 = "Титаник";
-        int income1 = 2194;
-
-        String film2 = "Аватар";
-        int income2 = 2810;
-
-        String film3 = "Тёмный рыцарь";
-        int income3 = 1084;
-
-        // Допишите реализацию метода ниже
-        if (income1 > income2) {
-            if (income1 > income3) {
-                return film1;
+    // Объявите метод findMaxExpense
+    public static double findMaxExpense(double[] expenses) {
+        // Реализуйте метод. Чтобы найти самую большую трату, воспользуйтесь циклом
+        double maxExpense = expenses[0];
+        for (double expense : expenses) {
+            if (expense > maxExpense) {
+                maxExpense = expense;
             }
-            return film3;
-        } else if (income2 > income3) {
-            return film2;
-        } else {
-            return film3;
         }
+        return maxExpense;
+
     }
 }
