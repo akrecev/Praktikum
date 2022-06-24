@@ -20,14 +20,9 @@ public class FinApp {
         int daysBeforeSalary = scanner.nextInt();
 
         while (true) {
-            ... // Вынесите печать меню в метод printMenu, здесь останется только его вызов
-            System.out.println("Что вы хотите сделать? ");
-            System.out.println("1 - Конвертировать валюту");
-            System.out.println("2 - Получить совет");
-            System.out.println("3 - Ввести трату");
-            System.out.println("4 - Показать траты за неделю");
-            System.out.println("5 - Показать самую большую сумму расходов за неделю");
-            System.out.println("0 - Выход");
+            // Вынесите печать меню в метод printMenu, здесь останется только его вызов
+            printMenu();
+
 
             int command = scanner.nextInt();
 
@@ -101,13 +96,21 @@ public class FinApp {
     }
 
     // Объявите и реализуйте метод printMenu, который печатает меню
+    public static void printMenu() {
+        System.out.println("Что вы хотите сделать? ");
+        System.out.println("1 - Конвертировать валюту");
+        System.out.println("2 - Получить совет");
+        System.out.println("3 - Ввести трату");
+        System.out.println("4 - Показать траты за неделю");
+        System.out.println("5 - Показать самую большую сумму расходов за неделю");
+        System.out.println("0 - Выход");
+    }
+
+    // Объявите и реализуйте метод convert, который конвертирует валюты
+    ... convert(Scanner scanner, double moneyBeforeSalary) ...
+
+    // Объявите и реализуйте метод getAdvice, который даёт совет
     ...
-
-            // Объявите и реализуйте метод convert, который конвертирует валюты
-            ... convert(Scanner scanner, double moneyBeforeSalary) ...
-
-            // Объявите и реализуйте метод getAdvice, который даёт совет
-            ...
 
 
 }
