@@ -106,6 +106,7 @@ public class FinApp {
         System.out.println("0 - Выход");
     }
 
+
     // Объявите и реализуйте метод convert, который конвертирует валюты
     ... convert(Scanner scanner, double moneyBeforeSalary) ...
 
